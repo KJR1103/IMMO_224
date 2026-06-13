@@ -7,12 +7,12 @@ const Footer = () => {
   const [authDialogOpen, setAuthDialogOpen] = useState(false);
   
   const navigationLinks = [
-    { label: "Book Now", to: "/search" },
-    { label: "FAQ", to: "/faq" },
+    { label: "Réserver maintenant", to: "/search" },
+    { label: "Questions fréquentes", to: "/faq" },
   ];
 
   const supportLinks = [
-    { label: "Help Center", to: "/help-center" },
+    { label: "Centre d'aide", to: "/help-center" },
     { label: "Support", to: "/support" },
   ];
 
@@ -25,15 +25,17 @@ const Footer = () => {
             <div className="flex flex-col lg:flex-row justify-between gap-12 mb-12">
               {/* Logo */}
               <Link to="/" className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Home className="h-6 w-6 text-primary" />
-                </div>
-                <span className="text-2xl font-bold">Rentely</span>
+                <img src="/favicon.png" alt="IMMO 224" className="h-12 w-12 rounded-xl" />
+                <span className="text-2xl font-bold tracking-tight">
+                  <span className="text-guinea-green">IMMO</span>
+                  <span className="text-guinea-red"> 2</span>
+                  <span className="text-guinea-yellow">2</span>
+                  <span className="text-guinea-green">4</span>
+                </span>
               </Link>
 
               {/* Link Columns */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12">
-                {/* Navigation Column */}
                 <div>
                   <h3 className="font-bold text-base mb-2">Navigation</h3>
                   <div className="w-12 h-1 bg-primary mb-4"></div>
@@ -51,9 +53,8 @@ const Footer = () => {
                   </ul>
                 </div>
 
-                {/* Hosts Column */}
                 <div>
-                  <h3 className="font-bold text-base mb-2">Hosts</h3>
+                  <h3 className="font-bold text-base mb-2">Hôtes</h3>
                   <div className="w-12 h-1 bg-primary mb-4"></div>
                   <ul className="space-y-2">
                     <li>
@@ -61,7 +62,7 @@ const Footer = () => {
                         to="/become-host"
                         className="text-foreground hover:text-primary transition-colors"
                       >
-                        Become a Host
+                        Devenir hôte
                       </Link>
                     </li>
                     <li>
@@ -69,13 +70,12 @@ const Footer = () => {
                         onClick={() => setAuthDialogOpen(true)}
                         className="text-foreground hover:text-primary transition-colors"
                       >
-                        Log In
+                        Se connecter
                       </button>
                     </li>
                   </ul>
                 </div>
 
-                {/* Support Column */}
                 <div>
                   <h3 className="font-bold text-base mb-2">Support</h3>
                   <div className="w-12 h-1 bg-primary mb-4"></div>
@@ -98,7 +98,7 @@ const Footer = () => {
             {/* Bottom Section - Copyright */}
             <div className="text-center pt-8 border-t border-card-border">
               <p className="text-text-secondary">
-                © {new Date().getFullYear()} Rentely. All rights reserved.
+                © {new Date().getFullYear()} IMMO 224 — Guinée. Tous droits réservés.
               </p>
             </div>
           </div>

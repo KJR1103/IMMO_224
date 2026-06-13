@@ -13,23 +13,20 @@ const DiscoverBanner = ({ onExploreClick }: DiscoverBannerProps) => {
         <div className="bg-primary rounded-3xl lg:rounded-[32px] p-8 md:p-12 lg:p-16 flex flex-col items-center justify-center min-h-[400px] gap-8">
           {/* Inner Text Block */}
           <div className="bg-banner-dark rounded-2xl lg:rounded-3xl p-6 text-center max-w-3xl">
-            {/* Heading */}
             <h2 className="text-banner-light text-3xl md:text-4xl lg:text-5xl mb-4 lg:mb-6">
-              Discover Your Next Stay
+              Découvrez votre prochain séjour
             </h2>
-            
-            {/* Subheading */}
+
             <p className="text-banner-light font-sans text-base mb-0">
-              Find the perfect destination for your next adventure
+              Trouvez la destination idéale pour votre prochaine aventure en Guinée
             </p>
           </div>
-          
-          {/* Button */}
-          <Button 
+
+          <Button
             onClick={onExploreClick}
             className="bg-banner-light text-primary hover:bg-banner-light/90 h-[54px] rounded-full px-8 font-display text-base"
           >
-            Explore Now
+            Explorer maintenant
             <Sparkles className="ml-2 h-5 w-5" />
           </Button>
         </div>

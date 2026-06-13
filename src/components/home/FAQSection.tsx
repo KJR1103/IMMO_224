@@ -29,11 +29,10 @@ export default function FAQSection() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium">
-            Frequently Asked Questions
+            Questions fréquentes
           </h2>
           <Link to="/faq" className="text-foreground hover:underline font-medium text-lg inline-flex items-center gap-2 group">
-            See All
-            
+            Voir tout
           </Link>
         </div>
 

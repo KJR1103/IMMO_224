@@ -43,7 +43,7 @@ const GuestLayout = () => {
 
   return (
     <div className="flex min-h-screen bg-background w-full">
-      <GuestSidebar logoText="Rentely" />
+      <GuestSidebar logoText="IMMO 224" />
       <div className="flex-1">
         <div className="container mx-auto px-4 pt-8 lg:px-8">
           <GuestPageHeader 

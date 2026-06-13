@@ -78,7 +78,7 @@ const SearchPageHeader = ({
         <div className="flex items-center justify-between h-20 gap-4">
           <Link to="/" className="flex items-center gap-2 flex-shrink-0">
             <Home className="h-6 w-6 text-primary" />
-            <span className="font-bold text-xl hidden sm:inline">Rentely</span>
+            <span className="font-bold text-xl hidden sm:inline">IMMO 224</span>
           </Link>
 
           {/* Search Component */}

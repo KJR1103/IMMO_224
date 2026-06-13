@@ -113,7 +113,7 @@ const HostLayout = () => {
 
   return (
     <div className="flex min-h-screen bg-background w-full">
-      <HostSidebar logoText="Rentely" />
+      <HostSidebar logoText="IMMO 224" />
       <div className="flex-1">
         {!hideHeader && (
           <div className="container mx-auto px-4 pt-8 lg:px-8">

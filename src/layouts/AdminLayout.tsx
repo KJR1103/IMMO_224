@@ -69,7 +69,7 @@ export default function AdminLayout() {
     <div className="flex min-h-screen bg-background w-full">
       <HostSidebar 
         navigationItems={adminNavigationItems}
-        logoText="Rentely Admin"
+        logoText="IMMO 224 Admin"
       />
       <div className="flex-1">
         <div className="container mx-auto pt-8">

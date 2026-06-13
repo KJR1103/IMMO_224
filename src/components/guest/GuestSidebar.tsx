@@ -30,7 +30,7 @@ interface SidebarContentProps {
 const SidebarContent = ({ 
   onNavigate, 
   navigationItems = defaultNavigation,
-  logoText = "Rentely"
+  logoText = "IMMO 224"
 }: SidebarContentProps) => {
   const { signOut } = useAuth();
   const location = useLocation();

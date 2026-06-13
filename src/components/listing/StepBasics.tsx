@@ -61,7 +61,7 @@ const StepBasics = ({ formData, updateFormData }: StepBasicsProps) => {
         `https://nominatim.openstreetmap.org/search?q=${query}&format=json&limit=1`,
         {
           headers: {
-            'User-Agent': 'Rentely'
+            'User-Agent': 'IMMO 224'
           }
         }
       );

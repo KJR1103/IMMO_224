@@ -8,43 +8,44 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 214 27% 97%;
-    --foreground: 215 25% 27%;
+    /* IMMO 224 — Palette inspirée du drapeau guinéen */
+    --background: 60 25% 98%;            /* Crème #FAFAF8 */
+    --foreground: 150 30% 12%;
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --card-foreground: 150 30% 12%;
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
-    --primary: 179 52% 16%;
+    --popover-foreground: 150 30% 12%;
+    --primary: 149 100% 30%;             /* Vert guinéen #009A44 */
     --primary-foreground: 0 0% 100%;
-    --secondary: 214 27% 92%;
-    --secondary-foreground: 215 25% 27%;
-    --muted: 214 27% 92%;
-    --muted-foreground: 215 15% 55%;
-    --accent: 214 32% 91%;
-    --accent-foreground: 215 25% 27%;
-    --destructive: 0 84% 60%;
+    --secondary: 51 97% 54%;             /* Jaune doré #FCD116 */
+    --secondary-foreground: 150 30% 12%;
+    --muted: 60 15% 94%;
+    --muted-foreground: 150 10% 40%;
+    --accent: 51 97% 54%;                /* Jaune doré */
+    --accent-foreground: 150 30% 12%;
+    --destructive: 354 85% 44%;          /* Rouge guinéen #CE1126 */
     --destructive-foreground: 0 0% 100%;
-    --border: 220 33% 87%;
-    --input: 220 33% 87%;
-    --ring: 6 78% 67%;
+    --border: 150 15% 88%;
+    --input: 150 15% 88%;
+    --ring: 149 100% 30%;
     --radius: 0.75rem;
-    --success: 142 71% 45%;
-    --success-foreground: 142 71% 35%;
-    --warning: 38 92% 50%;
-    --warning-foreground: 38 92% 40%;
+    --success: 149 100% 30%;
+    --success-foreground: 0 0% 100%;
+    --warning: 51 97% 54%;
+    --warning-foreground: 150 30% 12%;
     --info: 217 91% 60%;
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-    --calendar-available: 173 59% 49%;
-    --calendar-blocked: 346 100% 64%;
-    --calendar-booked: 220 33% 87%;
-    --calendar-selected: 178 49% 16%;
+    --sidebar-foreground: 150 20% 20%;
+    --sidebar-primary: 149 100% 30%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 60 15% 94%;
+    --sidebar-accent-foreground: 150 30% 12%;
+    --sidebar-border: 150 15% 88%;
+    --sidebar-ring: 149 100% 30%;
+    --calendar-available: 149 100% 30%;
+    --calendar-blocked: 354 85% 44%;
+    --calendar-booked: 150 15% 88%;
+    --calendar-selected: 149 100% 30%;
   }
 
   .dark {

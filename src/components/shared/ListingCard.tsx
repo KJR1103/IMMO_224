@@ -2,6 +2,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Bed, Home, Bath } from "lucide-react";
+import { formatGNF } from "@/lib/currency";
 
 interface ListingCardProps {
   listing: {
@@ -48,40 +49,37 @@ const ListingCard = ({ listing }: ListingCardProps) => {
                 {listing.rating_avg.toFixed(1)}
               </Badge>
               <span className="text-sm text-[#5D6174]">
-                {listing.rating_count} reviews
+                {listing.rating_count} avis
               </span>
             </div>
-            <p className="font-bold text-lg">${listing.base_price}</p>
+            <p className="font-bold text-base">{formatGNF(listing.base_price)}</p>
           </div>
 
-          {/* Metadata */}
           <p className="text-sm text-[#5D6174] mb-2">
             {listing.city}, {listing.country} • {listing.type}
-            {listing.size_sqft && ` • ${listing.size_sqft.toLocaleString()} sq ft`}
+            {listing.size_sqft && ` • ${listing.size_sqft.toLocaleString()} m²`}
           </p>
 
-          {/* Title */}
           <p className="font-sans font-normal text-base mb-3 line-clamp-2">
             {listing.title}
           </p>
 
-          {/* Specs */}
           <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-[#5D6174] mt-auto">
             <div className="flex items-center gap-1">
               <Users className="h-4 w-4" />
-              <span>Sleeps {listing.guests_max}</span>
+              <span>{listing.guests_max} visiteurs</span>
             </div>
             <div className="flex items-center gap-1">
               <Bed className="h-4 w-4" />
-              <span>{listing.beds} Beds</span>
+              <span>{listing.beds} lits</span>
             </div>
             <div className="flex items-center gap-1">
               <Home className="h-4 w-4" />
-              <span>{listing.bedrooms} Rooms</span>
+              <span>{listing.bedrooms} chambres</span>
             </div>
             <div className="flex items-center gap-1">
               <Bath className="h-4 w-4" />
-              <span>{listing.bathrooms} Bathrooms</span>
+              <span>{listing.bathrooms} sdb</span>
             </div>
           </div>
         </CardContent>

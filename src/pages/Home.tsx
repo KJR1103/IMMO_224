@@ -220,14 +220,9 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right Image */}
+            {/* Right Carousel */}
             <div className="hidden lg:block relative w-[1000px] h-[720px] lg:-mr-[calc((100vw-var(--container-padding,1rem))-max(0px,(100vw-1400px)/2))]">
-              <img
-                src={heroImage}
-                alt="Plage des Îles de Los, Guinée"
-                className="w-full h-full object-cover rounded-3xl"
-                loading="eager"
-              />
+              <HeroCarousel />
             </div>
           </div>
         </div>
@@ -239,8 +234,37 @@ const Home = () => {
       {/* Types d'expériences */}
       <GuineaCategories />
 
-      {/* Coups de cœur */}
-      <GuineaFeaturedListings />
+      {/* Carrousels par catégorie */}
+      <CategoryCarousel
+        title="Hôtels & Resorts"
+        subtitle="Du 3 étoiles aux palaces internationaux"
+        listings={listingsByCategory("Hôtels")}
+      />
+      <CategoryCarousel
+        title="Résidences & Villas"
+        subtitle="Appartements et villas privées en location"
+        listings={listingsByCategory("Résidences & Villas")}
+      />
+      <CategoryCarousel
+        title="Plages & Îles"
+        subtitle="Sable blanc, lagons et beach clubs"
+        listings={listingsByCategory("Plages & Îles")}
+      />
+      <CategoryCarousel
+        title="Loisirs & Vie nocturne"
+        subtitle="Night-clubs, bowling, cinéma et plus"
+        listings={listingsByCategory("Loisirs & Vie nocturne")}
+      />
+      <CategoryCarousel
+        title="Restaurants & Maquis"
+        subtitle="Saveurs guinéennes et tables internationales"
+        listings={listingsByCategory("Restaurants & Maquis")}
+      />
+      <CategoryCarousel
+        title="Nature & Culture"
+        subtitle="Cascades, montagnes et patrimoine"
+        listings={listingsByCategory("Nature & Culture")}
+      />
 
       {/* Bannière découvrir */}
       <DiscoverBanner onExploreClick={handleScrollToSearch} />

@@ -23,6 +23,7 @@ import HostBookings from "./pages/host/Bookings";
 import HostPayouts from "./pages/host/Payouts";
 import EarningsReport from "./pages/host/EarningsReport";
 import ListingDetail from "./pages/ListingDetail";
+import GuineaListingDetail from "./pages/GuineaListingDetail";
 import BookingConfirmation from "./pages/BookingConfirmation";
 import Checkout from "./pages/Checkout";
 import AdminLayout from "./layouts/AdminLayout";
@@ -79,6 +80,7 @@ const App = () => (
               <Route path="edit-listing/:id" element={<EditListing />} />
             </Route>
             <Route path="/listing/:id" element={<><Navbar /><ListingDetail /></>} />
+            <Route path="/lieu/:id" element={<><Navbar /><GuineaListingDetail /></>} />
             <Route path="/checkout" element={<><Navbar /><Checkout /></>} />
             <Route path="/booking-confirmation/:id" element={<><Navbar /><BookingConfirmation /></>} />
             <Route path="/guest" element={<GuestLayout />}>

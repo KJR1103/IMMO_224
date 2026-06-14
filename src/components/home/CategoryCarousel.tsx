@@ -68,7 +68,7 @@ const CategoryCarousel = ({ title, subtitle, listings, ctaHref = "/search" }: Pr
           {listings.map((l) => (
             <Link
               key={l.id}
-              to={`/search?location=${encodeURIComponent(l.city)}`}
+              to={`/lieu/${l.id}`}
               className="group snap-start shrink-0 w-[280px] sm:w-[320px] bg-card-bg border border-card-border rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col"
             >
               <div className="aspect-[4/3] overflow-hidden relative">

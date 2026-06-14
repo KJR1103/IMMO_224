@@ -6,7 +6,6 @@ import { Calendar as CalendarComponent } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
-import heroImage from "@/assets/guinea-hero.jpg";
 import type { DateRange } from "react-day-picker";
 import DiscoverBanner from "@/components/home/DiscoverBanner";
 import FAQSection from "@/components/home/FAQSection";
@@ -14,8 +13,10 @@ import Footer from "@/components/Footer";
 import DestinationAutocomplete from "@/components/search/DestinationAutocomplete";
 import GuineaDestinations from "@/components/home/GuineaDestinations";
 import GuineaCategories from "@/components/home/GuineaCategories";
-import GuineaFeaturedListings from "@/components/home/GuineaFeaturedListings";
 import WhyImmo224 from "@/components/home/WhyImmo224";
+import HeroCarousel from "@/components/home/HeroCarousel";
+import CategoryCarousel from "@/components/home/CategoryCarousel";
+import { listingsByCategory } from "@/data/guineaListings";
 
 const Home = () => {
   const navigate = useNavigate();
